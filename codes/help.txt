@@ -1,0 +1,8 @@
+-------------------------------------------------------
+Welcome!
+The commands are listed as follows:
+	-u ip filename	upload file
+	-d ip filename	download file
+	-v		view logs	
+	-h		help
+-------------------------------------------------------
