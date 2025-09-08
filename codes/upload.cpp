@@ -132,7 +132,7 @@ int upload(char* server_ip, char* filename, char* mode)
     while (1) {
         size_t bytesRead = fread(data, 1, block_size, file);
         size_t last_bytesRead;
-        if (bytesRead <= 0) {
+        if (bytesRead <= 0) {   //有问题，如果文件大小刚好能被512字节整除，则会多发一个空包，不能直接break
             break;
         }
 
