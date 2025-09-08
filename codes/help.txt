@@ -1,8 +1,8 @@
 -------------------------------------------------------
 Welcome!
 The commands are listed as follows:
-	-u ip filename	upload file
-	-d ip filename	download file
+	-u ip filename netascii/octet	upload file
+	-d ip filename	netascii/octet download file
 	-v		view logs	
 	-h		help
 -------------------------------------------------------

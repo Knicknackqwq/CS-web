@@ -11,7 +11,6 @@
 #define WRQ 2
 #define DATA 3
 #define ACK 4
-#define ERROR 5
 #define TIMEOUT 5
 #define RETRY 3
 
