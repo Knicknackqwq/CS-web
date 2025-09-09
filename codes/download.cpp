@@ -34,7 +34,7 @@ void send_rrq(SOCKET sockfd, SOCKADDR_IN* servaddr, char* filename,char *mode,FI
     a = sendto(sockfd, buffer, text_len + 1, 0, (SOCKADDR*)servaddr, sizeof(*servaddr));
     if (a > 0)
     {
-        printf("Request is sent!\n");
+        printf("Request is sent!\n");   //应该加上丢包重传机制（RRQ包没有送到后也应该重传至多RETRY次）
         //计入log日志
         time_t a = time(NULL);
         struct tm* b = localtime(&a);
